@@ -1,0 +1,27 @@
+easyblock = "PythonPackage"
+
+name = 'coverage'
+version = '4.2'
+
+homepage = 'https://pypi.python.org/pypi/coverage'
+description = """nicer cov for python."""
+
+toolchain = {'name': 'goolf', 'version': '1.4.10'}
+
+source_urls = [PYPI_SOURCE]
+sources = [SOURCELOWER_TAR_GZ]
+
+python = 'Python'
+pyver = '2.7.3'
+pyshortver = '2.7'
+eggdir = '%%(name)s-%%(version)s-py%s-linux-x86_64.egg' % pyshortver
+versionsuffix = '-%s-%s' % (python, pyver)
+
+#sanity_check_paths = {
+#    'files': [],
+#    'dirs': ['lib/python%s/site-packages/%s/%%(name)s' % (pyshortver, eggdir)],
+#}
+
+options = {'modulename': 'coverage'}
+
+moduleclass = 'bio'

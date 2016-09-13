@@ -1,0 +1,33 @@
+easyblock = "PythonPackage"
+
+name = 'MACS2'
+version = '2.1.0.20150731'
+
+homepage = 'https://pypi.python.org/pypi/MACS2'
+description = """chip-seq peak caller."""
+
+toolchain = {'name': 'goolf', 'version': '1.4.10'}
+
+source_urls = [PYPI_SOURCE]
+sources = [SOURCE_TAR_GZ]
+
+python = 'Python'
+pyver = '2.7.3'
+pyshortver = '2.7'
+eggdir = '%%(name)s-%%(version)s-py%s-linux-x86_64.egg' % pyshortver
+versionsuffix = '-%s-%s' % (python, pyver)
+
+dependencies = [
+    (python, pyver),
+    ('Cython', '0.22', versionsuffix),
+    ('numpy', '1.7.1', versionsuffix)
+]
+
+sanity_check_paths = {
+    'files': ['bin/macs2', 'lib/python%s/site-packages/%s' % (pyshortver, eggdir)],
+    'dirs': [],
+}
+
+options = {'modulename': 'MACS2'}
+
+moduleclass = 'bio'

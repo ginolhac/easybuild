@@ -1,0 +1,679 @@
+== 2016-06-07 13:01:25,240 main.EB_R INFO This is EasyBuild 2.1.0dev-r16bddda50d15212a3c896c7f6a3db99a4b1f97d9 (framework: 2.1.0dev-r16bddda50d15212a3c896c7f6a3db99a4b1f97d9, easyblocks: 2.1.0dev-r0e5f3de0007d7864a0452b06d953eb47178470fb) on host gaia-154.
+== 2016-06-07 13:01:25,240 main.EB_R INFO This is easyblock EB_R from module easybuild.easyblocks.r (/opt/apps/resif/devel/v1.1-20150414/.installRef/easybuild-easyblocks/easybuild/easyblocks/r/r.pyc)
+== 2016-06-07 13:01:25,241 main.EB_R INFO Build dir set to /home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare
+== 2016-06-07 13:01:25,241 main.EB_R INFO Install dir set to /home/users/aginolhac/.local/easybuild/software/lang/R/3.3.0-goolf-1.4.10-bare
+== 2016-06-07 13:01:25,241 main.EB_R INFO Init completed for application name R version 3.3.0
+== 2016-06-07 13:01:25,241 main.easyblock INFO Obtained application instance of for R (easyblock: None)
+== 2016-06-07 13:01:25,241 main.EB_R INFO building and installing lang/R/3.3.0-goolf-1.4.10-bare...
+== 2016-06-07 13:01:25,242 main.EB_R INFO fetching files...
+== 2016-06-07 13:01:25,242 main.EB_R INFO Starting fetch step
+== 2016-06-07 13:01:25,243 main.EB_R INFO Running method fetch_step part of step fetch
+== 2016-06-07 13:01:25,243 main.EB_R WARNING Easyconfig does not specify an EasyBuild-version (key 'easybuild_version')! Assuming the latest version
+== 2016-06-07 13:01:25,243 main.filetools INFO Command eb found at /opt/apps/resif/devel/v1.1-20150414/.installRef/easybuild-framework/eb
+== 2016-06-07 13:01:25,309 main.EB_R INFO Found file R-3.3.0.tar.gz at /home/users/aginolhac/.local/easybuild/sources/r/R/R-3.3.0.tar.gz
+== 2016-06-07 13:01:25,309 main.EB_R INFO Added sources: [{'path': '/home/users/aginolhac/.local/easybuild/sources/r/R/R-3.3.0.tar.gz', 'cmd': None, 'finalpath': '/home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare', 'name': 'R-3.3.0.tar.gz', 'checksum': None}]
+== 2016-06-07 13:01:25,309 main.EB_R INFO no patches provided
+== 2016-06-07 13:01:25,416 main.EB_R INFO md5 checksum for /home/users/aginolhac/.local/easybuild/sources/r/R/R-3.3.0.tar.gz: 5a7506c8813432d1621c9725e86baf7a
+== 2016-06-07 13:01:25,423 main.EB_R INFO Setting parallelism: 1
+== 2016-06-07 13:01:25,423 main.EB_R INFO Checking dirs that need to be created: ['/home/users/aginolhac/.local/easybuild/software/lang/R', '/home/users/aginolhac/.local/easybuild/modules/all/lang/R', '/home/users/aginolhac/.local/easybuild/modules/lang/lang/R']
+== 2016-06-07 13:01:25,465 main.EB_R INFO creating build dir, resetting environment...
+== 2016-06-07 13:01:25,465 main.EB_R INFO Starting ready step
+== 2016-06-07 13:01:25,466 main.EB_R INFO Running method check_readiness_step part of step ready
+== 2016-06-07 13:01:25,620 main.EB_R WARNING Loaded modules detected: ['base/EasyBuild/install-2.1.0']
+== 2016-06-07 13:01:26,103 main.EB_R INFO Running method make_builddir part of step ready
+== 2016-06-07 13:01:26,146 main.EB_R INFO Found old directory /home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare
+== 2016-06-07 13:01:34,300 main.filetools INFO Path /home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare successfully removed.
+== 2016-06-07 13:01:34,300 main.EB_R INFO Removed old directory /home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare
+== 2016-06-07 13:01:34,300 main.filetools INFO Creating directory /home/users/aginolhac/.local/easybuild/build/R/3.3.0/goolf-1.4.10-bare (parents: True, set_gid: False, sticky: False)
+== 2016-06-07 13:01:34,302 main.EB_R INFO Running method env_reset_changes part of step ready
+== 2016-06-07 13:01:34,302 main.EB_R INFO Running method handle_iterate_opts part of step ready
+== 2016-06-07 13:01:34,302 main.EB_R INFO unpacking...
+== 2016-06-07 13:01:34,302 main.EB_R INFO Starting source step
+== 2016-06-07 13:01:34,304 main.EB_R INFO Running method checksum_step part of step source
+== 2016-06-07 13:01:34,304 main.EB_R INFO Checksum verification for /home/users/aginolhac/.local/easybuild/sources/r/R/R-3.3.0.tar.gz using None passed.
+== 2016-06-07 13:01:34,304 main.EB_R INFO Running method extract_step part of step source
+== 2016-06-07 13:01:34,304 main.EB_R INFO Unpacking source R-3.3.0.tar.gz
+== 2016-06-07 13:01:36,922 main.EB_R INFO patching...
+== 2016-06-07 13:01:36,923 main.EB_R INFO Starting patch step
+== 2016-06-07 13:01:36,924 main.EB_R INFO Running method patch_step part of step patch
+== 2016-06-07 13:01:36,924 main.EB_R INFO preparing...
+== 2016-06-07 13:01:36,925 main.EB_R INFO Starting prepare step
+== 2016-06-07 13:01:36,926 main.EB_R INFO Running method prepare_step part of step prepare
+== 2016-06-07 13:01:45,170 main.Lmod INFO $MODULEPATH set based on list of module paths (via 'module use'): /mnt/gaiagpfs/users/homedirs/aginolhac/.local/easybuild/modules/all:/mnt/gaiagpfs/projects/melanomics/tools/privatemodules:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/all:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/lcsb/modules/all:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/bio:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/cae:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/chem:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/compiler:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/data:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/debugger:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/devel:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/lang:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/lib:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/math:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/mpi:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/numlib:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/phys:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/system:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/toolchain:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/tools:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/vis:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/base:/mnt/gaiagpfs/apps/manual_install:/opt/apps/resif/devel/v1.1-20150414/core/modules/bio:/opt/apps/resif/devel/v1.1-20150414/core/modules/cae:/opt/apps/resif/devel/v1.1-20150414/core/modules/chem:/opt/apps/resif/devel/v1.1-20150414/core/modules/compiler:/opt/apps/resif/devel/v1.1-20150414/core/modules/data:/opt/apps/resif/devel/v1.1-20150414/core/modules/debugger:/opt/apps/resif/devel/v1.1-20150414/core/modules/devel:/opt/apps/resif/devel/v1.1-20150414/core/modules/geo:/opt/apps/resif/devel/v1.1-20150414/core/modules/lang:/opt/apps/resif/devel/v1.1-20150414/core/modules/lib:/opt/apps/resif/devel/v1.1-20150414/core/modules/math:/opt/apps/resif/devel/v1.1-20150414/core/modules/mpi:/opt/apps/resif/devel/v1.1-20150414/core/modules/numlib:/opt/apps/resif/devel/v1.1-20150414/core/modules/perf:/opt/apps/resif/devel/v1.1-20150414/core/modules/phys:/opt/apps/resif/devel/v1.1-20150414/core/modules/system:/opt/apps/resif/devel/v1.1-20150414/core/modules/toolchain:/opt/apps/resif/devel/v1.1-20150414/core/modules/tools:/opt/apps/resif/devel/v1.1-20150414/core/modules/vis:/opt/apps/resif/devel/v1.1-20150414/core/modules/base:/opt/apps/manual_install::
+== 2016-06-07 13:01:53,578 main.Lmod INFO $MODULEPATH set based on list of module paths (via 'module use'): /mnt/gaiagpfs/users/homedirs/aginolhac/.local/easybuild/modules/all:/mnt/gaiagpfs/projects/melanomics/tools/privatemodules:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/all:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/lcsb/modules/all:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/bio:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/cae:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/chem:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/compiler:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/data:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/debugger:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/devel:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/lang:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/lib:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/math:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/mpi:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/numlib:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/phys:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/system:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/toolchain:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/tools:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/vis:/mnt/gaiagpfs/apps/resif/devel/v1.1-20150414/core/modules/base:/mnt/gaiagpfs/apps/manual_install:/opt/apps/resif/devel/v1.1-20150414/core/modules/bio:/opt/apps/resif/devel/v1.1-20150414/core/modules/cae:/opt/apps/resif/devel/v1.1-20150414/core/modules/chem:/opt/apps/resif/devel/v1.1-20150414/core/modules/compiler:/opt/apps/resif/devel/v1.1-20150414/core/modules/data:/opt/apps/resif/devel/v1.1-20150414/core/modules/debugger:/opt/apps/resif/devel/v1.1-20150414/core/modules/devel:/opt/apps/resif/devel/v1.1-20150414/core/modules/geo:/opt/apps/resif/devel/v1.1-20150414/core/modules/lang:/opt/apps/resif/devel/v1.1-20150414/core/modules/lib:/opt/apps/resif/devel/v1.1-20150414/core/modules/math:/opt/apps/resif/devel/v1.1-20150414/core/modules/mpi:/opt/apps/resif/devel/v1.1-20150414/core/modules/numlib:/opt/apps/resif/devel/v1.1-20150414/core/modules/perf:/opt/apps/resif/devel/v1.1-20150414/core/modules/phys:/opt/apps/resif/devel/v1.1-20150414/core/modules/system:/opt/apps/resif/devel/v1.1-20150414/core/modules/toolchain:/opt/apps/resif/devel/v1.1-20150414/core/modules/tools:/opt/apps/resif/devel/v1.1-20150414/core/modules/vis:/opt/apps/resif/devel/v1.1-20150414/core/modules/base:/opt/apps/manual_install::
+== 2016-06-07 13:01:54,483 main.Goolf INFO List of toolchain dependency modules and toolchain definition match!
+== 2016-06-07 13:01:54,552 main.ToolchainOptions WARNING option: option with name _opt_CC returns None
+== 2016-06-07 13:01:54,552 main.ToolchainOptions WARNING option: option with name _opt_CXX returns None
+== 2016-06-07 13:01:54,552 main.ToolchainOptions WARNING option: option with name _opt_F77 returns None
+== 2016-06-07 13:01:54,552 main.ToolchainOptions WARNING option: option with name _opt_F90 returns None
+== 2016-06-07 13:01:54,591 main.ToolchainOptions WARNING option: option with name _opt_MPIF77 returns None
+== 2016-06-07 13:01:54,592 main.ToolchainOptions WARNING option: option with name _opt_MPIF90 returns None
+== 2016-06-07 13:01:54,657 main.LinkLibraryPaths WARNING flags_for_subdirs: directory /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib64 was not found
+== 2016-06-07 13:01:54,702 main.LinkLibraryPaths WARNING flags_for_subdirs: directory /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib64 was not found
+== 2016-06-07 13:01:54,753 main.LinkLibraryPaths WARNING flags_for_subdirs: directory /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib64 was not found
+== 2016-06-07 13:01:54,784 main.LinkLibraryPaths WARNING flags_for_subdirs: directory /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib64 was not found
+== 2016-06-07 13:01:54,792 main.environment INFO Environment variable CPPFLAGS set to -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/include -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,792 main.environment INFO Environment variable EBVARCPPFLAGS set to -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/include -I/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable MPI_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/include
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable EBVARMPI_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/include
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable LIBSCALAPACK set to -lscalapack -lopenblas -lgfortran
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable EBVARLIBSCALAPACK set to -lscalapack -lopenblas -lgfortran
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable MPI_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/lib
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable EBVARMPI_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/lib
+== 2016-06-07 13:01:54,793 main.environment INFO Environment variable LAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable EBVARLAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable FFT_STATIC_LIBS set to libfftw3.a
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable EBVARFFT_STATIC_LIBS set to libfftw3.a
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable CXXFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable EBVARCXXFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable BLAS_LAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,794 main.environment INFO Environment variable EBVARBLAS_LAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable MPICC set to mpicc
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable EBVARMPICC set to mpicc
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable MPI_LIB_STATIC set to 
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable EBVARMPI_LIB_STATIC set to 
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable LIBS set to -lm -lpthread
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable EBVARLIBS set to -lm -lpthread
+== 2016-06-07 13:01:54,795 main.environment INFO Environment variable LIBLAPACK set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable EBVARLIBLAPACK set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable SCALAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable EBVARSCALAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable PRECFLAGS set to 
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable EBVARPRECFLAGS set to 
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable LIBSCALAPACK_MT_ONLY set to -lscalapack -lgfortran
+== 2016-06-07 13:01:54,796 main.environment INFO Environment variable EBVARLIBSCALAPACK_MT_ONLY set to -lscalapack -lgfortran
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable LIBLAPACK_MT set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable EBVARLIBLAPACK_MT set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable FLIBS set to -lgfortran
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable EBVARFLIBS set to -lgfortran
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable FFTW_STATIC_LIBS set to libfftw3.a
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable EBVARFFTW_STATIC_LIBS set to libfftw3.a
+== 2016-06-07 13:01:54,797 main.environment INFO Environment variable BLAS_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable EBVARBLAS_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable SCALAPACK_MT_STATIC_LIBS set to libscalapack.a,libopenblas.a,libgfortran.a,libpthread.a
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable EBVARSCALAPACK_MT_STATIC_LIBS set to libscalapack.a,libopenblas.a,libgfortran.a,libpthread.a
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable LIBSCALAPACK_MT set to -lscalapack -lopenblas -lpthread -lgfortran
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable EBVARLIBSCALAPACK_MT set to -lscalapack -lopenblas -lpthread -lgfortran
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable F90 set to gfortran
+== 2016-06-07 13:01:54,798 main.environment INFO Environment variable EBVARF90 set to gfortran
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable OMPI_F77 set to gfortran
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable EBVAROMPI_F77 set to gfortran
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable LIBSCALAPACK_ONLY set to -lscalapack -lgfortran
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable EBVARLIBSCALAPACK_ONLY set to -lscalapack -lgfortran
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable F90FLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable EBVARF90FLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,799 main.environment INFO Environment variable MPICXX set to mpicxx
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable EBVARMPICXX set to mpicxx
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable BLAS_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable EBVARBLAS_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable FFT_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable EBVARFFT_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable LIBFFT set to -lfftw3
+== 2016-06-07 13:01:54,800 main.environment INFO Environment variable EBVARLIBFFT set to -lfftw3
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable BLAS_LAPACK_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable EBVARBLAS_LAPACK_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable CC set to gcc
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable EBVARCC set to gcc
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable FFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable EBVARFFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,801 main.environment INFO Environment variable MPIF90 set to mpif90
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable EBVARMPIF90 set to mpif90
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable LAPACK_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable EBVARLAPACK_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable MPIF77 set to mpif77
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable EBVARMPIF77 set to mpif77
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable LIBBLAS_MT set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,802 main.environment INFO Environment variable EBVARLIBBLAS_MT set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable LIBBLAS set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable EBVARLIBBLAS set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable SCALAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable EBVARSCALAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable OMPI_CC set to gcc
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable EBVAROMPI_CC set to gcc
+== 2016-06-07 13:01:54,803 main.environment INFO Environment variable OPTFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable EBVAROPTFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable FFTW_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable EBVARFFTW_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable F77 set to gfortran
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable EBVARF77 set to gfortran
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable FFT_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,804 main.environment INFO Environment variable EBVARFFT_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/include
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable LAPACK_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable EBVARLAPACK_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable LAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable EBVARLAPACK_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable BLAS_LAPACK_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable EBVARBLAS_LAPACK_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,805 main.environment INFO Environment variable LIBLAPACK_ONLY set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable EBVARLIBLAPACK_ONLY set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable LIBLAPACK_MT_ONLY set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable EBVARLIBLAPACK_MT_ONLY set to -lopenblas -lgfortran
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable LDFLAGS set to -L/opt/apps/resif/devel/v1.1-20150414/core/software/compiler/GCC/4.7.2/lib64 -L/opt/apps/resif/devel/v1.1-20150414/core/software/compiler/GCC/4.7.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable EBVARLDFLAGS set to -L/opt/apps/resif/devel/v1.1-20150414/core/software/compiler/GCC/4.7.2/lib64 -L/opt/apps/resif/devel/v1.1-20150414/core/software/compiler/GCC/4.7.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib -L/opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable CXX set to g++
+== 2016-06-07 13:01:54,806 main.environment INFO Environment variable EBVARCXX set to g++
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable BLAS_LAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable EBVARBLAS_LAPACK_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable OMPI_FC set to gfortran
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable EBVAROMPI_FC set to gfortran
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable BLAS_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable EBVARBLAS_INC_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include
+== 2016-06-07 13:01:54,807 main.environment INFO Environment variable MPI_LIB_SHARED set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/lib/libmpi.so
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable EBVARMPI_LIB_SHARED set to /opt/apps/resif/devel/v1.1-20150414/core/software/mpi/OpenMPI/1.6.4-GCC-4.7.2/lib/libmpi.so
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable SCALAPACK_STATIC_LIBS set to libscalapack.a,libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable EBVARSCALAPACK_STATIC_LIBS set to libscalapack.a,libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable CFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable EBVARCFLAGS set to -O2 -march=native
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable BLAS_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,808 main.environment INFO Environment variable EBVARBLAS_MT_STATIC_LIBS set to libopenblas.a,libgfortran.a
+== 2016-06-07 13:01:54,809 main.environment INFO Environment variable FFTW_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,809 main.environment INFO Environment variable EBVARFFTW_LIB_DIR set to /opt/apps/resif/devel/v1.1-20150414/core/software/numlib/FFTW/3.3.3-gompi-1.4.10/lib
+== 2016-06-07 13:01:54,809 main.environment INFO Environment variable OMPI_CXX set to g++
+== 2016-06-07 13:01:54,809 main.environment INFO Environment variable EBVAROMPI_CXX set to g++
+== 2016-06-07 13:01:54,809 main.EB_R INFO configuring...
+== 2016-06-07 13:01:54,810 main.EB_R INFO Starting configure step
+== 2016-06-07 13:01:54,811 main.EB_R INFO Running method configure_step part of step configure
+== 2016-06-07 13:01:54,811 main.environment INFO Environment variable FC set to gfortran
+== 2016-06-07 13:02:15,898 main ERROR cmd "BLAS_LIBS="$LIBBLAS" LAPACK_LIBS="$LIBLAPACK" ./configure --prefix=/home/users/aginolhac/.local/easybuild/software/lang/R/3.3.0-goolf-1.4.10-bare --with-lapack --with-blas --with-pic --enable-threads --with-x=no --enable-R-shlib --with-recommended-packages=no" exited with exitcode 1 and output:
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+loading site script './config.site'
+loading build-specific script './config.site'
+checking for pwd... /bin/pwd
+checking whether builddir is srcdir... yes
+checking for working aclocal... found
+checking for working autoconf... found
+checking for working automake... found
+checking for working autoheader... found
+checking whether ln -s works... yes
+checking for bison... bison -y
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for sed... /bin/sed
+checking for which... /usr/bin/which
+checking for less... /usr/bin/less
+checking for gtar... no
+checking for gnutar... no
+checking for tar... /bin/tar
+checking for tex... /usr/bin/tex
+checking for pdftex... /usr/bin/pdftex
+checking for pdflatex... /usr/bin/pdflatex
+checking for makeindex... /usr/bin/makeindex
+checking for texi2any... no
+configure: WARNING: you cannot build info or HTML versions of the R manuals
+checking for texi2dvi... /usr/bin/texi2dvi
+checking for kpsewhich... /usr/bin/kpsewhich
+checking for latex inconsolata package... missing
+configure: WARNING: neither inconsolata.sty nor zi4.sty found: PDF vignettes and package manuals will not be rendered optimally
+checking for unzip... /usr/bin/unzip
+checking for zip... /usr/bin/zip
+checking for gzip... /bin/gzip
+checking for bzip2... /bin/bzip2
+checking for firefox... no
+checking for mozilla... no
+checking for galeon... no
+checking for opera... no
+checking for xdg-open... /usr/bin/xdg-open
+using default browser ... /usr/bin/xdg-open
+checking for acroread... no
+checking for acroread4... no
+checking for xdg-open... /usr/bin/xdg-open
+checking for notangle... false
+checking for realpath... false
+checking for pkg-config... /usr/bin/pkg-config
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking whether gcc needs -traditional... no
+checking how to run the C preprocessor... gcc -E
+defining F77 to be gfortran
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether gfortran accepts -g... yes
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking whether __attribute__((visibility())) is supported... yes
+checking whether gcc accepts -fvisibility... yes
+checking whether gfortran accepts -fvisibility... yes
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... gcc
+checking whether we are using the GNU Objective C compiler... no
+checking whether gcc accepts -g... no
+checking for Objective C++ compiler... trying some possibilities
+checking whether g++ can compile ObjC++... no
+checking whether  can compile ObjC++... no
+no working ObjC++ compiler found
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gfortran option to produce PIC... -fPIC
+checking if gfortran PIC flag -fPIC works... yes
+checking if gfortran static flag -static works... yes
+checking if gfortran supports -c -o file.o... yes
+checking if gfortran supports -c -o file.o... (cached) yes
+checking whether the gfortran linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for cos in -lm... yes
+checking for sin in -lm... yes
+checking for dlopen in -ldl... yes
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking for rl_callback_read_char in -lreadline... yes
+checking for history_truncate_file... yes
+checking whether rl_completion_matches exists and is declared... yes
+checking for ANSI C header files... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking dl.h usability... no
+checking dl.h presence... no
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking features.h usability... yes
+checking features.h presence... yes
+checking for features.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking floatingpoint.h usability... no
+checking floatingpoint.h presence... no
+checking for floatingpoint.h... no
+checking fpu_control.h usability... yes
+checking fpu_control.h presence... yes
+checking for fpu_control.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for strings.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking stdalign.h usability... yes
+checking stdalign.h presence... yes
+checking for stdalign.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking for stdint.h... (cached) yes
+checking for string.h... (cached) yes
+checking whether setjmp.h is POSIX.1 compatible... yes
+checking whether sigsetjmp is declared... yes
+checking whether siglongjmp is declared... yes
+checking for GNU C library with version >= 2... yes
+checking return type of signal handlers... void
+checking for uint64_t... yes
+checking for int64_t... yes
+checking for int_fast64_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking whether SIZE_MAX is declared... yes
+checking for blkcnt_t... yes
+checking for type of socket length... socklen_t *
+checking for stack_t... yes
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking for gcc option to accept ISO C99... -std=gnu99
+checking for gcc -std=gnu99 option to accept ISO Standard C... (cached) -std=gnu99
+checking for inline... inline
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of double... 8
+checking size of size_t... 8
+checking size of long double... 16
+checking whether we can compute C Make dependencies... yes, using $(CC) -MM
+checking whether gcc -std=gnu99 supports -c -o FILE.lo... yes
+checking for gcc -std=gnu99 option to support OpenMP... -fopenmp
+checking for dummy main to link with Fortran 77 libraries... none
+checking for Fortran 77 name-mangling scheme... lower case, underscore, no extra underscore
+checking whether gfortran appends underscores to external names... yes
+checking whether gfortran appends extra underscores to external names... no
+checking whether mixed C/Fortran code can be run... yes
+checking whether gfortran and gcc -std=gnu99 agree on int and double... yes
+checking whether gfortran and gcc -std=gnu99 agree on double complex... yes
+checking for gfortran option to support OpenMP... -fopenmp
+checking whether g++ accepts -M for generating dependencies... yes
+checking for g++ option to support OpenMP... -fopenmp
+checking whether we can compute ObjC Make dependencies... no
+checking whether C runtime needs -D__NO_MATH_INLINES... no
+checking for xmkmf... /usr/bin/xmkmf
+checking whether g++  supports C++11 features by default... no
+checking whether g++  supports C++11 features with -std=c++11... yes
+checking for off_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether alloca is declared... yes
+checking whether expm1 exists and is declared... yes
+checking whether hypot exists and is declared... yes
+checking whether log1p exists and is declared... yes
+checking whether log1pl exists and is declared... yes
+checking whether log2 exists and is declared... yes
+checking whether log10 exists and is declared... yes
+checking whether nearbyint exists and is declared... yes
+checking whether nearbyintl exists and is declared... yes
+checking whether powl exists and is declared... yes
+checking whether rint exists and is declared... yes
+checking whether rintl exists and is declared... yes
+checking whether va_copy exists and is declared... yes
+checking for isblank... yes
+checking sunmath.h usability... no
+checking sunmath.h presence... no
+checking for sunmath.h... no
+checking for cospi in -lsunmath... no
+checking for atanpi... no
+checking for atan2pi... no
+checking for cospi... no
+checking for exp10... yes
+checking for pown... no
+checking for sinpi... no
+checking for tanpi... no
+checking for __cospi... no
+checking for __sinpi... no
+checking for __tanpi... no
+checking for fseeko... yes
+checking for ftello... yes
+checking for matherr... yes
+checking whether fcntl exists and is declared... yes
+checking whether getgrgid exists and is declared... yes
+checking whether getpwuid exists and is declared... yes
+checking whether kill exists and is declared... yes
+checking whether sigaction exists and is declared... yes
+checking whether sigaltstack exists and is declared... yes
+checking whether sigemptyset exists and is declared... yes
+checking whether fdopen exists and is declared... yes
+checking whether popen exists and is declared... yes
+checking whether getline exists and is declared... yes
+checking whether setenv exists and is declared... yes
+checking whether unsetenv exists and is declared... yes
+checking whether getrlimit exists and is declared... yes
+checking whether getrusage exists and is declared... yes
+checking whether getpriority exists and is declared... yes
+checking whether chmod exists and is declared... yes
+checking whether mkfifo exists and is declared... yes
+checking whether stat exists and is declared... yes
+checking whether umask exists and is declared... yes
+checking whether gettimeofday exists and is declared... yes
+checking whether utimes exists and is declared... yes
+checking whether times exists and is declared... yes
+checking whether gmtime_r exists and is declared... yes
+checking whether localtime_r exists and is declared... yes
+checking whether nl_langinfo exists and is declared... yes
+checking whether access exists and is declared... yes
+checking whether chdir exists and is declared... yes
+checking whether execv exists and is declared... yes
+checking whether ftruncate exists and is declared... yes
+checking whether getcwd exists and is declared... yes
+checking whether geteuid exists and is declared... yes
+checking whether getuid exists and is declared... yes
+checking whether link exists and is declared... yes
+checking whether readlink exists and is declared... yes
+checking whether symlink exists and is declared... yes
+checking whether sysconf exists and is declared... yes
+checking whether sched_setaffinity exists and is declared... yes
+checking whether sched_getaffinity exists and is declared... yes
+checking whether utime exists and is declared... yes
+checking for clock_gettime in -lrt... yes
+checking whether clock_gettime exists and is declared... yes
+checking whether timespec_get exists and is declared... no
+checking for putenv... yes
+checking whether putenv is declared... yes
+checking for vasprintf... yes
+checking whether vasprintf is declared... yes
+checking for mempcpy... yes
+checking for realpath... yes
+checking whether realpath is declared... yes
+checking whether glob exists and is declared... yes
+checking for isnan... yes
+checking whether isfinite is declared... yes
+checking whether isnan is declared... yes
+checking whether you have IEEE 754 floating-point arithmetic... yes
+checking whether putenv("FOO") can unset an environment variable... yes
+checking whether putenv("FOO=") can unset an environment variable... no
+checking for nl_langinfo and CODESET... yes
+checking for mkdtemp... yes
+checking for strdup... yes
+checking for strncasecmp... yes
+checking whether mkdtemp is declared... yes
+checking whether strdup is declared... yes
+checking whether strncasecmp is declared... yes
+checking for library containing connect... none required
+checking for library containing gethostbyname... none required
+checking for library containing xdr_string... none required
+checking for __setfpucw... no
+checking for working calloc... yes
+checking for working isfinite... yes
+checking for working log1p... yes
+checking whether ftell works correctly on files opened for append... yes
+checking for working sigaction... yes
+checking whether mktime sets errno... no
+checking whether mktime works correctly outside 1902-2037... yes
+checking complex.h usability... yes
+checking complex.h presence... yes
+checking for complex.h... yes
+checking for double complex... yes
+checking whether C99 double complex is supported... yes
+checking whether cabs exists and is declared... yes
+checking whether carg exists and is declared... yes
+checking whether cexp exists and is declared... yes
+checking whether clog exists and is declared... yes
+checking whether csqrt exists and is declared... yes
+checking whether cpow exists and is declared... yes
+checking whether ccos exists and is declared... yes
+checking whether csin exists and is declared... yes
+checking whether ctan exists and is declared... yes
+checking whether cacos exists and is declared... yes
+checking whether casin exists and is declared... yes
+checking whether catan exists and is declared... yes
+checking whether ccosh exists and is declared... yes
+checking whether csinh exists and is declared... yes
+checking whether ctanh exists and is declared... yes
+checking whether 'struct tm' includes tm_zone... yes
+checking whether 'struct tm' includes tm_gmtoff... yes
+checking for dgemm_ in -lopenblas -lgfortran... yes
+checking whether double complex BLAS can be used... yes
+checking whether the BLAS is complete... yes
+checking for dpstrf_... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking whether iconv accepts "UTF-8", "latin1", "ASCII" and "UCS-*"... yes
+checking for iconvlist... no
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking whether mbrtowc exists and is declared... yes
+checking whether wcrtomb exists and is declared... yes
+checking whether wcscoll exists and is declared... yes
+checking whether wcsftime exists and is declared... yes
+checking whether wcstod exists and is declared... yes
+checking whether mbstowcs exists and is declared... yes
+checking whether wcstombs exists and is declared... yes
+checking whether wctrans exists and is declared... yes
+checking whether iswblank exists and is declared... yes
+checking whether wctype exists and is declared... yes
+checking whether iswctype exists and is declared... yes
+checking for wctrans_t... yes
+checking for mbstate_t... yes
+checking for ICU... yes
+checking for X... disabled
+using X11 ... no
+checking whether pkg-config knows about cairo and pango... yes
+checking whether cairo including pango is >= 1.2 and works... yes
+checking for tclConfig.sh... no
+checking for tclConfig.sh in library (sub)directories... no
+checking for tkConfig.sh... no
+checking for tkConfig.sh in library (sub)directories... no
+checking for tcl.h... no
+checking for BSD networking... yes
+checking rpc/types.h usability... yes
+checking rpc/types.h presence... yes
+checking for rpc/types.h... yes
+checking for rpc/xdr.h... yes
+checking for XDR support... yes
+checking for inflateInit2_ in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking if zlib version >= 1.2.5... yes
+checking whether zlib support suffices... yes
+checking mmap support for zlib... yes
+checking for BZ2_bzlibVersion in -lbz2... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking if bzip2 version >= 1.0.6... yes
+checking whether bzip2 support suffices... no
+checking for lzma_version_number in -llzma... no
+configure: error: "liblzma library and headers are required"
+ (at easybuild/tools/run.py:384 in parse_cmd_output)
+== 2016-06-07 13:02:15,899 main.easyblock WARNING build failed (first 300 chars): cmd "BLAS_LIBS="$LIBBLAS" LAPACK_LIBS="$LIBLAPACK" ./configure --prefix=/home/users/aginolhac/.local/easybuild/software/lang/R/3.3.0-goolf-1.4.10-bare --with-lapack --with-blas --with-pic --enable-threads --with-x=no --enable-R-shlib --with-recommended-packages=no" exited with exitcode 1 and output:
+== 2016-06-07 13:02:15,899 main.EB_R INFO Closing log for application name R version 3.3.0

@@ -1,0 +1,28 @@
+# This file is an EasyBuild reciPY as per https://github.com/hpcugent/easybuild
+# Author: Sarah Diehl
+
+easyblock = 'MakeCp'
+
+name = 'AdapterRemoval'
+version = '2.1.4' 
+
+homepage = 'https://github.com/MikkelSchubert/adapterremoval'
+description = """This program was developed to remove residual adapter sequences from next generation sequencing reads. The program handles both single end and paired end data."""
+
+toolchain = {'name': 'goolf', 'version': '1.4.10'}
+
+
+# https://github.com/MikkelSchubert/adapterremoval/archive/v2.1.4.tar.gz
+source_urls = ['https://github.com/MikkelSchubert/adapterremoval/archive/']
+sources = ['v%s.tar.gz' % version]
+
+
+#files_to_copy = [(["pigz", "unpigz"], "bin")]
+files_to_copy = [(["build/AdapterRemoval"], "bin"), (["build/AdapterRemoval.1"], "man")]
+        
+sanity_check_paths = {
+    'files': ["bin/AdapterRemoval", "man/AdapterRemoval.1"],
+    'dirs': [""],
+}
+
+moduleclass = 'bio'

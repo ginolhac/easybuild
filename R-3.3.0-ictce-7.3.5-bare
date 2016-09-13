@@ -1,0 +1,52 @@
+#%Module
+proc ModulesHelp { } {
+    puts stderr { R is a free software environment for statistical computing and graphics. - Homepage: http://www.r-project.org/
+    }
+}
+
+module-whatis {Description: R is a free software environment for statistical computing and graphics. - Homepage: http://www.r-project.org/}
+
+set root /opt/apps/resif/devel/v1.1-20150414/core/software/lang/R/3.3.0-ictce-7.3.5-bare
+
+conflict lang/R
+
+if { ![ is-loaded toolchain/ictce/7.3.5 ] } {
+    module load toolchain/ictce/7.3.5
+}
+
+if { ![ is-loaded lib/libreadline/6.3-ictce-7.3.5 ] } {
+    module load lib/libreadline/6.3-ictce-7.3.5
+}
+
+if { ![ is-loaded devel/ncurses/5.9-ictce-7.3.5 ] } {
+    module load devel/ncurses/5.9-ictce-7.3.5
+}
+
+if { ![ is-loaded lib/libpng/1.6.17-ictce-7.3.5 ] } {
+    module load lib/libpng/1.6.17-ictce-7.3.5
+}
+
+if { ![ is-loaded lib/libjpeg-turbo/1.4.0-ictce-7.3.5 ] } {
+    module load lib/libjpeg-turbo/1.4.0-ictce-7.3.5
+}
+
+if { ![ is-loaded lang/Java/1.8.0_25 ] } {
+    module load lang/Java/1.8.0_25
+}
+
+if { ![ is-loaded tools/cURL/7.46.0-ictce-7.3.5 ] } {
+    module load tools/cURL/7.46.0-ictce-7.3.5
+}
+
+prepend-path	LD_LIBRARY_PATH		$root/lib64
+prepend-path	LD_LIBRARY_PATH		$root/lib64/R/lib
+prepend-path	LIBRARY_PATH		$root/lib64
+prepend-path	LIBRARY_PATH		$root/lib64/R/lib
+prepend-path	MANPATH		$root/share/man
+prepend-path	PATH		$root/bin
+prepend-path	PKG_CONFIG_PATH		$root/lib64/pkgconfig
+setenv	EBROOTR		"$root"
+setenv	EBVERSIONR		"3.3.0"
+setenv	EBDEVELR		"$root/easybuild/lang-R-3.3.0-ictce-7.3.5-bare-easybuild-devel"
+
+# Built with EasyBuild version 2.1.0dev-r16bddda50d15212a3c896c7f6a3db99a4b1f97d9

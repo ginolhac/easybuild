@@ -1,0 +1,34 @@
+easyblock = "PythonPackage"
+
+name = 'paleomix'
+version = '1.2.5'
+
+homepage = 'https://github.com/MikkelSchubert/paleomix'
+description = """The PALEOMIX pipeline is a set of free and open-source pipelines and tools designed to enable the rapid processing of Next Generation Sequencing (NGS) data, starting from de-multiplexed reads from one or more samples, through sequence processing and alignment, and ending with genotyping, phylogenetic inference on the samples, as well as metagenomic analysis of the samples. The pipeline has been designed with ancient DNA (aDNA) in mind, and includes several features especially useful for the analyses of ancient samples, but may be used for both modern and ancient samples."""
+
+toolchain = {'name': 'goolf', 'version': '1.4.10'}
+
+# https://github.com/MikkelSchubert/paleomix/archive/v1.0.1.tar.gz
+source_urls = ['https://github.com/MikkelSchubert/paleomix/archive/']
+sources = ['v%s.tar.gz' % version]
+
+python = 'Python'
+pyver = '2.7.3'
+pyshortver = '2.7'
+#eggdir = '%%(name)s-%%(version)s-py%s-linux-x86_64.egg' % pyshortver
+versionsuffix = '-%s-%s' % (python, pyver)
+
+dependencies = [
+    (python, pyver),
+    ('pysam', '0.9.1', versionsuffix),
+    ('nose', '1.3.7', versionsuffix),
+]
+
+#sanity_check_paths = {
+#    'files': ['bin/bam_pipeline','bin/bam_rmdup_collapsed','bin/conv_gtf_to_bed','bin/paleomix','bin/phylo_pipeline','bin/trim_pipeline'],
+#    'dirs': ['lib/python%s/site-packages/paleomix' % (pyshortver)],
+#}
+
+options = {'modulename': 'paleomix'}
+
+moduleclass = 'bio'
